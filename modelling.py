@@ -58,7 +58,7 @@ def model(X_train, y_train):
     # create a logistic regression model
     clf = LogisticRegressionCV(
         cv=3,
-        solver="newtom-cholseky",
+        solver="newton-cholseky",
         max_iter=1000,
         n_jobs=-1,
         verbose=1,
